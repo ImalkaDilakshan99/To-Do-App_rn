@@ -125,33 +125,35 @@ export default function Index() {
               </View>
             </View>
           ) : (
-            <View style={homeStyles.todoTextContainer}>
-              <Text
-                style={[
-                  homeStyles.todoText,
-                  item.isCompleted && {
-                    textDecorationLine: "line-through",
-                    color: colors.textMuted,
-                    opacity: 0.6,
-                  },
-                ]}
-              >
-                {item.text}
-              </Text>
+            <>
+              <View style={homeStyles.todoTextContainer}>
+                <Text
+                  style={[
+                    homeStyles.todoText,
+                    item.isCompleted && {
+                      textDecorationLine: "line-through",
+                      color: colors.textMuted,
+                      opacity: 0.6,
+                    },
+                  ]}
+                >
+                  {item.text}
+                </Text>
+              </View>
 
               <View style={homeStyles.todoActions}>
                 <TouchableOpacity onPress={() => handleEditTodo(item)} activeOpacity={0.8}>
                   <LinearGradient colors={colors.gradients.warning} style={homeStyles.actionButton}>
-                    <Ionicons name="pencil" size={14} color="#fff" />
+                    <Ionicons name="pencil" size={16} color="#fff" />
                   </LinearGradient>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => handleDeleteTodo(item._id)} activeOpacity={0.8}>
                   <LinearGradient colors={colors.gradients.danger} style={homeStyles.actionButton}>
-                    <Ionicons name="trash" size={14} color="#fff" />
+                    <Ionicons name="trash" size={16} color="#fff" />
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
-            </View>
+            </>
           )}
         </LinearGradient>
       </View>

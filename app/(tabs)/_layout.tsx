@@ -30,7 +30,7 @@ const TabsLayout = () => {
         options={{
           title: "Todos",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="flash-outline" size={size} color={color} />
+            <Ionicons name="rocket-outline" size={size} color={color} />
           ),
         }}
       />

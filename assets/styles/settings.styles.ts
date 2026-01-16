@@ -41,15 +41,15 @@ export const createSettingsStyles = (colors: ColorScheme) => {
       paddingBottom: 120,
     },
     section: {
-      borderRadius: 20,
+      borderRadius: 24,
       padding: 24,
-      shadowColor: "#000",
+      shadowColor: colors.primary,
       shadowOffset: {
         width: 0,
-        height: 4,
+        height: 6,
       },
-      shadowOpacity: 0.1,
-      shadowRadius: 8,
+      shadowOpacity: 0.12,
+      shadowRadius: 12,
       elevation: 8, // elevation is used to create a shadow on the section, in android
     },
     sectionTitle: {
@@ -73,8 +73,13 @@ export const createSettingsStyles = (colors: ColorScheme) => {
       flexDirection: "row",
       alignItems: "center",
       padding: 20,
-      borderRadius: 16,
-      borderLeftWidth: 4,
+      borderRadius: 20,
+      borderLeftWidth: 5,
+      shadowColor: colors.primary,
+      shadowOffset: { width: 0, height: 3 },
+      shadowOpacity: 0.08,
+      shadowRadius: 8,
+      elevation: 4,
     },
     statIconContainer: {
       marginRight: 16,
