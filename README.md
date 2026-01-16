@@ -20,10 +20,8 @@ A beautiful, modern React Native todo application built with Expo, featuring a s
 <div align="center">
   <img src="./screenshots/home-light.png" alt="Home Screen Light Mode" width="250"/>
   <img src="./screenshots/home-dark.png" alt="Home Screen Dark Mode" width="250"/>
-  <img src="./screenshots/settings.png" alt="Settings Screen" width="250"/>
+  <img src="./screenshots/setting.png" alt="Settings Screen" width="250"/>
 </div>
-
-> **Note:** To add screenshots, take screenshots of your app and save them in the `screenshots` folder with the names shown above.
 
 ## 🛠️ Tech Stack
 
